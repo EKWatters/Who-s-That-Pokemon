@@ -1,0 +1,11 @@
+﻿@model Pokemon
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Who's that Pokemon?!</h1>
+    <img  src="/PokedexImages/@(Model.Number).jpg" />
+    <p id="pokemonName" style="display:none">@Model.Name</p>
+    <button onclick="pokemonName.style.display = ''">Show Me!</button>
+</div>
